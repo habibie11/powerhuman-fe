@@ -55,7 +55,7 @@
     }
 
     .form-icon-chevron_down {
-        @apply bg-[url('../assets/svgs/ic-chevron-down.svg')] bg-no-repeat bg-[center_right_24px]
+        @apply bg-[url('/assets/svgs/ic-chevron-down.svg')] bg-no-repeat bg-[center_right_24px]
     }
 
     .notification-dot {
