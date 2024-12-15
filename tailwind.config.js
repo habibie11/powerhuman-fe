@@ -1,15 +1,11 @@
 module.exports = {
   content: [
-    "./components/**/*.{js,vue,ts}",
-    "./layouts/**/*.vue",
-    "./pages/**/*.vue",
-    "./plugins/**/*.{js,ts}",
-    "./app.vue",
-    "./error.vue",
-    "./nuxt.config.{js, ts}",
+    './components/**/*.{js,vue,ts}',
+    './layouts/**/*.vue',
+    './pages/**/*.vue',
+    './plugins/**/*.{js,ts}',
+    './nuxt.config.{js,ts}',
   ],
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
       poppins: 'Poppins, sans-serif'
@@ -24,9 +20,6 @@ module.exports = {
         'success': '#2ED16C',
       }
     },
-  },
-  variants: {
-    extend: {},
   },
   plugins: [],
 }

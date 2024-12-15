@@ -51,7 +51,7 @@
     }
 
     .form-icon-search {
-        @apply sm:bg-[url('../assets/svgs/ic-search.svg')] bg-no-repeat bg-[center_right_24px]
+        @apply sm:bg-[url('/assets/svgs/ic-search.svg')] bg-no-repeat bg-[center_right_24px]
     }
 
     .form-icon-chevron_down {
