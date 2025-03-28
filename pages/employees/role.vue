@@ -55,12 +55,11 @@
                </div>
             </div>
          </section>
-         <a
-            href="employee_add-to-team.html"
+         <NuxtLink :to="{ name: 'employees-team' }"
             class="w-full btn btn-primary mt-[14px]"
          >
             Continue
-         </a>
+         </NuxtLink>
       </form>
    </section>
 </template>

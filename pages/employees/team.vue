@@ -99,7 +99,7 @@
                <a
                   href="employees.html"
                   id="continueBtn"
-                  class="hidden btn btn-primary"
+                  class="btn btn-primary"
                >
                   Continue
                </a>
