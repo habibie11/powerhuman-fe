@@ -35,13 +35,41 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
-    // '@nuxtjs/tailwindcss',
+    '@nuxtjs/tailwindcss',
     // '@nuxtjs/postcss8'
   ],
 
-  // Modules: https://go.nuxtjs.dev/config-modules
+  // Authentication module configuration: https://auth.nuxtjs.org/
   modules: [
+    '@nuxtjs/auth-next',
+    '@nuxtjs/axios'
   ],
+
+  axios: {
+    baseURL: 'http://powerhuman-backend.test/api/' // Replace with your API base URL
+  },
+
+  auth: {
+    strategies: {
+      local: {
+        token: {
+          property: 'result.access_token',
+          global: true,
+          required: true,
+          type: 'Bearer'
+        },
+        user: {
+          property: 'result',
+          autoFetch: true
+        },
+        endpoints: {
+          login: { url: '/login', method: 'post' },
+          logout: { url: '/logout', method: 'post' },
+          user: { url: '/user', method: 'get' }
+        }
+      }
+    }
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
