@@ -80,7 +80,7 @@
                         </div>
                      </div>
                      <NuxtLink :to="{ name: 'teams-create' }">
-                         <img src="/assets/svgs/ric-plus.svg" alt="" />
+                        <img src="/assets/svgs/ric-plus.svg" alt="" />
                      </NuxtLink>
                   </div>
                </div>
@@ -167,6 +167,7 @@
 
 <script>
 export default {
+   middleware: "auth",
    layout: "dashboard",
 };
 </script>

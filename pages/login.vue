@@ -9,7 +9,12 @@
       <form class="w-full card" @submit.prevent="userLogin">
          <div class="form-group">
             <label for="" class="text-grey">Email Address</label>
-            <input type="email" class="input-field" v-model="login.email" required />
+            <input
+               type="email"
+               class="input-field"
+               v-model="login.email"
+               required
+            />
          </div>
          <div class="form-group">
             <label for="" class="text-grey">Password</label>
